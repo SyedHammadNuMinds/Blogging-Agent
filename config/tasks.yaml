@@ -1,0 +1,53 @@
+create_blog_task:
+    description: >
+        Using the expanded outline your task is to write a complete blog post based on the input_topic: "{input_topic}".
+        The blog must follow a clear structure with an engaging introduction, 3-5 detailed
+        body sections (based on the subtopics), and a strong conclusion. Ensure the blog is
+        written in a natural tone suitable for the target audience.
+    expected_output: |
+        A well-structured, publication-ready blog post of 800-1200 words, based on the input_topic: "{input_topic}".
+        The post must:
+        - Be divided into an introduction, 3-5 main sections, and a conclusion
+        - Be engaging, informative, and aligned with user search intent
+
+find_seo_keywords_task:
+    description: >
+        Analyze the topic outline and blog content and extract high-performing SEO keywords related to
+        the blog's core subject. Consider current search trends and user intent. Use
+        tools or heuristics to determine relevance and competitiveness.
+    expected_output: >
+        A list of 5-10 target keywords, including one primary keyword and several
+        long-tail or secondary keywords. Each keyword should include relevance notes
+        or labels for suggested usage.
+
+assess_keywords_task:
+    description: >
+        Evaluate the SEO keywords for their strategic fit within the blog post.
+        Determine where and how to use each keyword (title, headings, intro, etc.)
+        and refine the list based on priority and difficulty.
+    expected_output: >
+        A finalized keyword strategy document, listing keywords by priority.
+
+reference_finder_task:
+    description: >
+        Search the web using the given tool for 3-5 authoritative sources (articles, studies, blog posts)
+        that are directly relevant to the subtopics identified in the outline. Each
+        reference should be trustworthy and offer factual or value-adding content.
+    expected_output: >
+        A list of citation sources, each with a title, URL, and author.
+        Ensure sources are current and from reliable domains.
+
+finalize_blog_task:
+    description: >
+        Use the outputs from the outline, SEO strategy, and citation research to synthesize a
+        complete blog post on "{input_topic}". Ensure a clean structure, flowing transitions between
+        sections, natural integration of SEO keywords, and properly formatted citation links.
+        The tone should be consistent and aligned with the target audience, and the formatting must
+        match standard blog publishing guidelines (subheadings, bullet points, etc.).
+    expected_output: >
+        A complete and polished blog post with:
+        - Integrated outline content as structured sections
+        - SEO keywords naturally incorporated
+        - Citations properly embedded as hyperlinks
+        - Clear formatting for online publishing (headings, subheadings, lists)
+        - A strong, concise conclusion

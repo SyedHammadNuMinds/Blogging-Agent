@@ -1,0 +1,8 @@
+crewai
+pyYAML
+scikit-learn
+dotenv
+langchain_community
+pydantic
+duckduckgo-search
+streamlit
